@@ -5,10 +5,13 @@ Create a simple RESTful API in flask with database access and seriaization valid
 ### Prerequisites
 
 Python 3+
+sqllite
 
 ```
 pip install -r requirements.txt
 ```
+Currently set up to create a sqlite at /tmp/test.db
+
 
 ## Examples
 First Terminal
