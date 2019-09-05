@@ -36,10 +36,8 @@ todos_schema = TodoSchema(many=True)
 
 
 def abort_if_todo_doesnt_exist(todo_id):
-    id_list = [x.id for x in TodoModel.query.all()]
-    print(type(id_list[0]))
-    print(type(todo_id))
-    if int(todo_id) not in id_list:
+    id_t = TodoModel().query.get(todo_id)
+    if int(todo_id) not in id_t:
         abort(404, message="Todo {} doesn't exist".format(todo_id))
 
 
