@@ -29,7 +29,7 @@ Second Terminal
 curl http://127.0.0.1:5000/todos
 []
 
-# Add a Tasj
+# Add a Task
 curl -d '{"description":"First Task!"}' -H "Content-Type: application/json" -X POST http://localhost:5000/todos
 {
     "description": "First Task!",
